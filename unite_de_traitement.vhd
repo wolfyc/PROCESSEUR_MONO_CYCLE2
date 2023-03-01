@@ -10,8 +10,8 @@ entity unite_de_traitement is
         RW:  in std_logic_vector(3 downto 0);
         WE:  in std_logic;
         OP:  in std_logic_vector(1 downto 0);
-        S:   out std_logic_vector(31 downto 0);
-        N: out std_logic
+        S,W:   out std_logic_vector(31 downto 0); --output & input
+        N: out std_logic --signe of the output
     );
 end entity;
 
@@ -32,7 +32,7 @@ banc_de_registreU: entity work.banc_de_registre
     port map(
             clk => clk,
             rst => rst,
-            w   => S_tb,
+            W  => S_tb,
             RA=> RA,
             RB=> RB,
             RW=> RW,
