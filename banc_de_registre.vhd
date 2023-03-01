@@ -13,7 +13,6 @@ entity banc_de_registre is
         WE:  in std_logic;
         A:   out std_logic_vector(31 downto 0);
         B:   out std_logic_vector(31 downto 0)
-
     );
 end entity;
 
@@ -34,9 +33,10 @@ architecture behav of banc_de_registre is
     signal Banc: table:=init_banc;
 
     begin
+        -- Lecture Asyncrones
             A <= Banc(To_integer(unsigned(RA)));
             B <= Banc(To_integer(unsigned(RB)));
-            
+        -- ecriture syncrones
     lecture: process(clk)
         begin
             if (rst = '1') then
@@ -47,8 +47,4 @@ architecture behav of banc_de_registre is
 		end if;
             end if;
     end process;
-                
-
-        
-
     end architecture;

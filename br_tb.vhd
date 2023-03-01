@@ -30,8 +30,4 @@ architecture behav of br_tb is
                 end if;
             end if;
     end process;
-                
-
-        
-
     end architecture;

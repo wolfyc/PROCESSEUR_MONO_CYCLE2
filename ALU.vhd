@@ -22,6 +22,4 @@ S <= std_logic_vector(Ss);
                   As - Bs when "10",
                   As when others;
 N <= Ss(31);
-
-
 end architecture;
