@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity mux2 is
     generic (
 
-        N: INTEGER := 2
+        N: INTEGER := 32
     );
 
     port(
