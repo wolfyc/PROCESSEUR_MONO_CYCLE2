@@ -47,4 +47,8 @@ architecture behav of banc_de_registre is
 		end if;
             end if;
     end process;
+                
+
+        
+
     end architecture;
