@@ -18,7 +18,9 @@ entity sign_extension is
         signal sign_bit: std_logic;
     begin
         sign_bit <= E(N-1);
-        with s select
-
+        S((N-1) downto 0) <= E;
+        with sign_bit select
+                S(31 downto N) <= (others =>'0')  when '0',
+                      (others =>'1')  when '1', (others => '0') when others;
 
     end architecture;
