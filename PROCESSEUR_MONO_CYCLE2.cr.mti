@@ -33,17 +33,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity banc_de_registre
 -- Compiling architecture behav of banc_de_registre
 
-} {} {}} C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity unite_de_traitement
--- Compiling architecture behav of unite_de_traitement
--- Loading entity ALU
--- Loading entity banc_de_registre
-
 } {} {}} C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
