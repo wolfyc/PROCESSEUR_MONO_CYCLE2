@@ -15,9 +15,10 @@ entity sign_extension is
     end entity;
 
     Architecture behav of sign_extension is
+        signal sign_bit: std_logic;
     begin
-        
-        
+        sign_bit <= E(N-1);
+        with s select
 
 
     end architecture;
