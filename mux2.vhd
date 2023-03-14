@@ -4,7 +4,6 @@ use ieee.numeric_std.all;
 
 entity mux2 is
     generic (
-
         N: INTEGER := 32
     );
 

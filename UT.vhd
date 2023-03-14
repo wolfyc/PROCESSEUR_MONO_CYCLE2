@@ -21,12 +21,12 @@ Architecture behav of UT is
 begin
 
 ALUu: entity work.ALU
-port map(
-    A  => As,
-    B  => Bs,
-	OP => OP,
-	S  => Ss,
-	N  => N);
+    port map(
+        A  => As,
+        B  => Bs,
+        OP => OP,
+        S  => Ss,
+        N  => N);
 
 banc_de_registreU: entity work.banc_de_registre
     port map(

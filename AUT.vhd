@@ -31,13 +31,13 @@ Architecture behav of AUT is
 begin
 
 ALUu: entity work.ALU
-port map(
-    A  => As,
-    B  => Bs,
-	OP => OP,
-	S  => Ss,
-	N  => N
-);
+    port map(
+        A  => As,
+        B  => Bs,
+        OP => OP,
+        S  => Ss,
+        N  => N
+    );
 
 banc_de_registreU: entity work.banc_de_registre
     port map(
@@ -52,7 +52,7 @@ banc_de_registreU: entity work.banc_de_registre
             B=> Bs
     );
 
-    MemoireU: entity work.memoire 
+MemoireU: entity work.memoire 
     port map(
             clk => clk,
             rst => rst,
@@ -61,6 +61,27 @@ banc_de_registreU: entity work.banc_de_registre
             Addr=> RB,
             dataOut=> RW
     );
+ALUsrcu: entity work.mux2
+port map(
+    A  => As,
+    B  => Bs,
+	com => OP,
+	S  => Ss,
+);
+
+memory_to_registeru: entity work.mux2
+port map(
+    A  => As,
+    B  => Bs,
+	com => OP,
+	S  => Ss,
+);
+
+signExtu: entity work.sign_extension
+port map(
+   E =>
+   S =>
+);
 
 S <= Ss;
 
