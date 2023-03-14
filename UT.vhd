@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity unite_de_traitement is
+entity UT is
     port(
         clk,rst: in std_logic;
         RA:  in std_logic_vector(3 downto 0);
@@ -15,7 +15,7 @@ entity unite_de_traitement is
     );
 end entity;
 
-Architecture behav of unite_de_traitement is
+Architecture behav of UT is
     signal Ss,As,Bs : std_logic_vector(31 downto 0);
     
 begin

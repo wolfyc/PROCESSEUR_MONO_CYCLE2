@@ -2,12 +2,12 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 use ieee.numeric_std.all;
 
-entity Tb_unite_de_traitement is
+entity TB_UT is
 end entity;
 
-architecture arc_Tb_unite_de_traitement of Tb_unite_de_traitement is
+architecture arc_TB_UT of TB_UT is
 
-  component unite_de_traitement is
+  component UT is
     port(
         clk,rst: in std_logic;
         RA:  in std_logic_vector(3 downto 0);
@@ -31,7 +31,7 @@ architecture arc_Tb_unite_de_traitement of Tb_unite_de_traitement is
 
 begin
 
-  UUT: unite_de_traitement port map(
+  UUT: UT port map(
     clk => clk,
     rst => rst,
     w => w,
