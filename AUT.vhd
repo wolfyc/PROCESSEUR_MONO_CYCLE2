@@ -14,25 +14,28 @@ entity AUT is
         RW:  in std_logic_vector(3 downto 0);
         WE:  in std_logic;
         -- ALU
-        ALUsrc : in std_logic_vector(1 downto 0);
+        OP : in std_logic_vector(1 downto 0);--
         ALUflag:  : out std_logic;
         -- Memoire
         WrEn:  in std_logic;
         -- Mux2
+        ALUsrc : in std_logic;--
+        -- Mux2
         memToReg : in std_logic;
         -- Signe Ext
-        imm8 : in std_logic_vector((7) downto 0);
+        imm8 : in std_logic_vector((7) downto 0);--
         -- 
     );
 end entity;
 
 Architecture behav of AUT is
+signal busA,busB,extendedImm8: std_logic_vector(31 downto 0);
 
 begin
 
 ALUu: entity work.ALU
     port map(
-        A  => As,
+        A  => busA,
         B  => Bs,
         OP => OP,
         S  => Ss,
@@ -48,8 +51,8 @@ banc_de_registreU: entity work.banc_de_registre
             RB=> RB,
             RW=> RW,
             WE=> WE,
-            A=> As,
-            B=> Bs
+            A=> busA,
+            B=> busB
     );
 
 MemoireU: entity work.memoire 
@@ -61,15 +64,15 @@ MemoireU: entity work.memoire
             Addr=> RB,
             dataOut=> RW
     );
-ALUsrcu: entity work.mux2
+ALUsrcu: entity work.mux2 -- selects B when com = 1
 port map(
-    A  => As,
-    B  => Bs,
-	com => OP,
+    A  => busB, -- selected when com = zero
+    B  => extendedImm8, -- selected when com = one
+	com => ALUsrc,
 	S  => Ss,
 );
 
-memory_to_registeru: entity work.mux2
+memory_to_registeru: entity work.mux2 
 port map(
     A  => As,
     B  => Bs,
@@ -79,8 +82,8 @@ port map(
 
 signExtu: entity work.sign_extension
 port map(
-   E =>
-   S =>
+   E =>imm8,
+   S => extendedImm8
 );
 
 S <= Ss;
