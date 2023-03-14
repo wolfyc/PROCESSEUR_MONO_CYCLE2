@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity sign_extension is
     generic (
 
-        N: INTEGER := 32
+        N: INTEGER := 8
     );
 
     port(
@@ -22,5 +22,4 @@ entity sign_extension is
         with sign_bit select
                 S(31 downto N) <= (others =>'0')  when '0',
                       (others =>'1')  when '1', (others => '0') when others;
-
     end architecture;

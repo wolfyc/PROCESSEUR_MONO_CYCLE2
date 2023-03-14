@@ -15,19 +15,19 @@ architecture arc_TB_UT of TB_UT is
         RW:  in std_logic_vector(3 downto 0);
         WE:  in std_logic;
         OP:  in std_logic_vector(1 downto 0);
-        W:   out std_logic_vector(31 downto 0);	--output & input
-        N: out std_logic				--signe of the output
+        W:   out std_logic_vector(31 downto 0);	      --output & input
+        N: out std_logic				                      --signe of the output
     );
   end component;
 
- signal	      clk,rst: std_logic;
+ signal	      clk, rst: std_logic;
  signal       RA:  std_logic_vector(3 downto 0);
  signal       RB:  std_logic_vector(3 downto 0);
  signal       RW:  std_logic_vector(3 downto 0);
  signal       WE:  std_logic;
  signal       OP:  std_logic_vector(1 downto 0);
  signal       W:    std_logic_vector(31 downto 0);	--output & input
- signal       N:  std_logic;			--signe of the output
+ signal       N:  std_logic;			                  --signe of the output
 
 begin
 

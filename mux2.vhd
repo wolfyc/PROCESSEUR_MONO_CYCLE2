@@ -11,7 +11,7 @@ entity mux2 is
     port(
         A,B : in std_logic_vector((N-1) downto 0);
         Com : in std_logic;
-        S : out std_logic_vector((N-1) downto 0)
+        S   : out std_logic_vector((N-1) downto 0)
         );
     end entity;
 
