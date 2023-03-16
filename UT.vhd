@@ -26,7 +26,8 @@ ALUu: entity work.ALU
         B  => Bs,
         OP => OP,
         S  => Ss,
-        N  => N);
+        N  => N
+        );
 
 banc_de_registreU: entity work.banc_de_registre
     port map(

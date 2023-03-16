@@ -22,9 +22,9 @@ Vz6F4Xb>ngThK<^^7FYWge2
 !s100 ;Y2CNUhRJYmDMmAhJDJ>n0
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1678783984
+Z8 !s110 1678974218
 !i10b 1
-Z9 !s108 1678783983.000000
+Z9 !s108 1678974218.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU.vhd|
 Z11 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU.vhd|
 !i113 1
@@ -49,37 +49,42 @@ R11
 !i113 1
 R12
 R13
-Ebanc_de_registre
-Z15 w1677684172
+Eaut
+Z15 w1678976425
 R1
 R2
 R3
 R4
-Z16 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd
-Z17 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd
+Z16 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/AUT.vhd
+Z17 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/AUT.vhd
 l0
 L5
-V_QYC^jS:O5fGKVg9M8O0C2
-!s100 FXLMa]79[cPoLU9h;O2OQ3
+VPi;ak>;7fWP6dWnONdV5X3
+!s100 67Dk6@_k79YFOKB4[NGZX1
 R7
 32
-Z18 !s110 1678783985
+Z18 !s110 1678976449
 !i10b 1
-Z19 !s108 1678783985.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd|
-Z21 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd|
+Z19 !s108 1678976449.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/AUT.vhd|
+Z21 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/AUT.vhd|
 !i113 1
 R12
 R13
 Abehav
+Z22 DEx4 work 14 sign_extension 0 22 2TO5aOC>:iY^hZkT@49nh0
+Z23 DEx4 work 7 memoire 0 22 ZQ2lF4e87cX1QBmW@6b`^2
+R14
+Z24 DEx4 work 4 mux2 0 22 14kEgFHPW8KNcI8=iGP]n0
+Z25 DEx4 work 16 banc_de_registre 0 22 _QYC^jS:O5fGKVg9M8O0C2
 R1
 R2
 R3
-Z22 DEx4 work 16 banc_de_registre 0 22 _QYC^jS:O5fGKVg9M8O0C2
+DEx4 work 3 aut 0 22 Pi;ak>;7fWP6dWnONdV5X3
 l35
-L19
-VB?bUXPhA`U7Ne3YX985BG3
-!s100 cI^4PP0E3@K;F>F5h[HNf3
+L31
+VIZ6IGjJZh2ZhUUZCZ1VR]0
+!s100 N9TeiUE]@5fmkzU[10XY<3
 R7
 32
 R18
@@ -87,6 +92,47 @@ R18
 R19
 R20
 R21
+!i113 1
+R12
+R13
+Ebanc_de_registre
+Z26 w1677684172
+R1
+R2
+R3
+R4
+Z27 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd
+Z28 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd
+l0
+L5
+V_QYC^jS:O5fGKVg9M8O0C2
+!s100 FXLMa]79[cPoLU9h;O2OQ3
+R7
+32
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd|
+Z30 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/banc_de_registre.vhd|
+!i113 1
+R12
+R13
+Abehav
+R1
+R2
+R3
+R25
+l35
+L19
+VB?bUXPhA`U7Ne3YX985BG3
+!s100 cI^4PP0E3@K;F>F5h[HNf3
+R7
+32
+R8
+!i10b 1
+R9
+R29
+R30
 !i113 1
 R12
 R13
@@ -113,24 +159,24 @@ R7
 R12
 R13
 Ememoire
-Z23 w1677688882
+Z31 w1677688882
 R1
 R2
 R3
 R4
-Z24 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd
-Z25 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd
+Z32 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd
+Z33 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd
 l0
 L5
 VZQ2lF4e87cX1QBmW@6b`^2
 !s100 <9553mF[VnX3[:Pd7NJJO1
 R7
 32
-Z26 !s110 1678783992
+Z34 !s110 1678976438
 !i10b 1
-Z27 !s108 1678783992.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd|
-Z29 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd|
+Z35 !s108 1678976438.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd|
+Z37 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/memoire.vhd|
 !i113 1
 R12
 R13
@@ -138,40 +184,40 @@ Abehav
 R1
 R2
 R3
-DEx4 work 7 memoire 0 22 ZQ2lF4e87cX1QBmW@6b`^2
+R23
 l31
 L16
 VRe4^Z>mRRm>PEWd>Jg2Zl1
 !s100 :BPiIZ8H2Zam6;nJn[`IW0
 R7
 32
-R26
+R34
 !i10b 1
-R27
-R28
-R29
+R35
+R36
+R37
 !i113 1
 R12
 R13
 Emux2
-Z30 w1677685193
+Z38 w1678790869
 R1
 R2
 R3
 R4
-Z31 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd
-Z32 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd
+Z39 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd
+Z40 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd
 l0
 L5
-VlU9GjSHAB@P0dofA1cz[80
-!s100 dib<MP3L0BO_Y9ZIGLIQH3
+V14kEgFHPW8KNcI8=iGP]n0
+!s100 R3bbS77e^4iKzXOocgiob1
 R7
 32
-Z33 !s110 1678783991
+Z41 !s110 1678974219
 !i10b 1
-Z34 !s108 1678783991.000000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd|
-Z36 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd|
+Z42 !s108 1678974219.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd|
+Z44 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/mux2.vhd|
 !i113 1
 R12
 R13
@@ -179,40 +225,40 @@ Abehav
 R1
 R2
 R3
-DEx4 work 4 mux2 0 22 lU9GjSHAB@P0dofA1cz[80
-l19
-L18
-VmCU?V8;OB58dhMNMRlKET1
-!s100 8H6mTV36ZoDU_=:K8>Ji`0
+R24
+l18
+L17
+VPP[KMWH?ZJ6HzTAP__g;a3
+!s100 IogPG>aGd5IH068NJzF?b0
 R7
 32
-R33
+R41
 !i10b 1
-R34
-R35
-R36
+R42
+R43
+R44
 !i113 1
 R12
 R13
 Esign_extension
-Z37 w1678786274
+Z45 w1678786274
 R1
 R2
 R3
 R4
-Z38 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd
-Z39 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd
+Z46 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd
+Z47 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd
 l0
 L5
 V2TO5aOC>:iY^hZkT@49nh0
 !s100 :DdlX5bNcIVXBT_Ce33LL2
 R7
 32
-Z40 !s110 1678786352
+R41
 !i10b 1
-Z41 !s108 1678786352.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd|
-Z43 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd|
+R42
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd|
+Z49 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/sign_extension.vhd|
 !i113 1
 R12
 R13
@@ -220,40 +266,40 @@ Abehav
 R1
 R2
 R3
-Z44 DEx4 work 14 sign_extension 0 22 2TO5aOC>:iY^hZkT@49nh0
+R22
 l19
 L17
-Z45 VdL21=;ibAehlB7OgIIh4Z1
-Z46 !s100 gGnJCM^[Rzd:M5dbS9Gej0
+VdL21=;ibAehlB7OgIIh4Z1
+!s100 gGnJCM^[Rzd:M5dbS9Gej0
 R7
 32
-R40
-!i10b 1
 R41
+!i10b 1
 R42
-R43
+R48
+R49
 !i113 1
 R12
 R13
 Etb_banc_registres
-Z47 w1677684319
+Z50 w1677684319
 R1
 R2
 R3
 R4
-Z48 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd
-Z49 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd
+Z51 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd
+Z52 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd
 l0
 L5
 VNC@OEJ8Mc@J80>a9jldIM3
 !s100 =jiAF7N29aTaASOo<9Ved3
 R7
 32
-R33
+R41
 !i10b 1
-R34
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd|
-Z51 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd|
+R42
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd|
+Z54 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_Banc_registres.vhd|
 !i113 1
 R12
 R13
@@ -268,33 +314,33 @@ VNRHLh17Yc8M@dlaXcKJ`V3
 !s100 5TO7hHA[kkaR7[hg;2d1o2
 R7
 32
-R33
+R41
 !i10b 1
-R34
-R50
-R51
+R42
+R53
+R54
 !i113 1
 R12
 R13
 Etb_ut
-Z52 w1678783929
+Z55 w1678786701
 R1
 R2
 R3
 R4
-Z53 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd
-Z54 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd
+Z56 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd
+Z57 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd
 l0
 L5
 VchLNMh06_a7hFgKV7n4R`1
 !s100 ;YeTk>XAH0:mZDZK<odFb3
 R7
 32
-R26
+Z58 !s110 1678974220
 !i10b 1
-R27
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd|
-Z56 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd|
+R42
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd|
+Z60 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/Tb_UT.vhd|
 !i113 1
 R12
 R13
@@ -305,36 +351,36 @@ R3
 DEx4 work 5 tb_ut 0 22 chLNMh06_a7hFgKV7n4R`1
 l32
 L8
-VII3M;LQ4h>Hz=6jfgl^HN3
-!s100 0I?9F;z5lUk@mk4NKSdzz3
+ViVZJRg[TN06Fa`CU86COn2
+!s100 IfHjacBzdjdk:GaL=[Xlo0
 R7
 32
-R26
+R58
 !i10b 1
-R27
-R55
-R56
+R42
+R59
+R60
 !i113 1
 R12
 R13
 Etest_bench_alu
-Z57 w1677147451
+Z61 w1677147451
 R2
 R3
 R4
-Z58 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd
-Z59 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd
+Z62 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd
+Z63 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd
 l0
 L4
 V32J<goCZ`jMdHL7Vc_mem2
 !s100 PM3jBJ0i40YKXIzND;2?k2
 R7
 32
-R18
+R8
 !i10b 1
-R19
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd|
-Z61 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd|
+R9
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd|
+Z65 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/ALU_tb.vhd|
 !i113 1
 R12
 R13
@@ -348,38 +394,38 @@ VUbKe3<To?bd3nkV>AEV3[1
 !s100 N=EXHa6AnoMa8`z3WFK@71
 R7
 32
-R18
+R8
 !i10b 1
-R19
-R60
-R61
+R9
+R64
+R65
 !i113 1
 R12
 R13
 Eunite_de_traitement
-Z62 w1677685016
+Z66 w1677685016
 R1
 R2
 R3
 R4
-Z63 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd
-Z64 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd
+Z67 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd
+Z68 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd
 l0
 L5
 VR[WL;^<G01AHQSW0<2_nX1
 !s100 F7e`EgU_Vb5fWM>mgfjHZ0
 R7
 32
-Z65 !s110 1677755779
+Z69 !s110 1677755779
 !i10b 1
-Z66 !s108 1677755778.000000
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd|
-Z68 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd|
+Z70 !s108 1677755778.000000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd|
+Z72 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/unite_de_traitement.vhd|
 !i113 1
 R12
 R13
 Abehav
-R22
+R25
 R14
 R1
 R2
@@ -391,38 +437,38 @@ VCeLW=eVP44^E_T3=N1F432
 !s100 [<WNa;H9n^Ub1nPd4k]Pc2
 R7
 32
-R65
+R69
 !i10b 1
-R66
-R67
-R68
+R70
+R71
+R72
 !i113 1
 R12
 R13
 Eut
-Z69 w1678783877
+Z73 w1678968806
 R1
 R2
 R3
 R4
-Z70 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd
-Z71 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd
+Z74 8C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd
+Z75 FC:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd
 l0
 L5
 VCYJ;Dc20=QHDTCCYg[I<X0
 !s100 o7lh2OcA3G<=R1TD8Jf881
 R7
 32
-R26
+R58
 !i10b 1
-R27
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd|
-Z73 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd|
+Z76 !s108 1678974220.000000
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd|
+Z78 !s107 C:/Users/hrf_m/Desktop/processeur_mono_cycle/PROCESSEUR_MONO_CYCLE2/UT.vhd|
 !i113 1
 R12
 R13
 Abehav
-R22
+R25
 R14
 R1
 R2
@@ -430,15 +476,15 @@ R3
 DEx4 work 2 ut 0 22 CYJ;Dc20=QHDTCCYg[I<X0
 l21
 L18
-VnD83Y?`dhhgV@RO07d]7e1
-!s100 40;0aA07^D9@^Wg`Zjag=3
+VhEm8D8of<lmDmQ^74@^f>0
+!s100 cCL8Eb[RkSk4Jn4;CWL6f2
 R7
 32
-R26
+R58
 !i10b 1
-R27
-R72
-R73
+R76
+R77
+R78
 !i113 1
 R12
 R13

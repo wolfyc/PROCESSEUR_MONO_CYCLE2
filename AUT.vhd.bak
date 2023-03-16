@@ -68,7 +68,7 @@ MemoireU: entity work.memoire
             rst => rst,--
             WrEn  => WrEn,--
             dataIn=> dataIN,--
-            Addr=> ALUout(5 downto 0),--
+            Addr=> ALUout,--
             dataOut=> busW
     );
 
