@@ -82,6 +82,7 @@ memory_to_registeru: entity work.mux2
     );
 
 signExtu: entity work.sign_extension
+    generic map(N=>8)
     port map(
         E =>imm8,  
         S => extendedImm8
