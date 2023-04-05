@@ -27,4 +27,4 @@ architecture Arch of memoire2 is
 begin 
 -- Lecture de la memoire 
 DataOut <= instru(to_integer(unsigned(Addr)));
-end arch; 
+end arch;
