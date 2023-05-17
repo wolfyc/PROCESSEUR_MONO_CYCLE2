@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity AUT is
 
     port(
-        -- Banc_de_registre
+        --registre16x32
         clk: in std_logic;
         rst: in std_logic;
         w:   in std_logic_vector(31 downto 0);
@@ -33,7 +33,7 @@ Architecture behav of AUT is
 signal busA,busB,busW,extendedImm8,dataIN,dataOUT,banc_alu,ALUout: std_logic_vector(31 downto 0);
 
 begin
-    banc_de_registreU: entity work.banc_de_registre
+    registre16x32U: entity work.registre16x32
     port map(
             clk => clk,--
             rst => rst,--

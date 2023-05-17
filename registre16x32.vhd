@@ -2,7 +2,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 use ieee.numeric_std.all;
 
-entity banc_de_registre is
+entity registre16x32 is
     port(
         clk: in std_logic;
         rst: in std_logic;
@@ -16,7 +16,7 @@ entity banc_de_registre is
     );
 end entity;
 
-architecture behav of banc_de_registre is
+architecture behav of registre16x32 is
     --Declaration Type Tableau Memoire
     type table is array(15 downto 0) of std_logic_vector(31 downto 0);
     --Fonction d'Initialisation du Banc de Registres

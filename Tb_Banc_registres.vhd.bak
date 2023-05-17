@@ -2,12 +2,12 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
 use ieee.numeric_std.all;
 
-entity Tb_registre16x32 is
+entity Tb_Banc_registres is
 end entity;
 
-architecture arc_Tb_registre16x32 of Tb_registre16x32 is
+architecture arc_Tb_Banc_registres of Tb_Banc_registres is
 
-  component registre16x32 is
+  component banc_de_registre is
     port(
     	clk: in std_logic;
         rst: in std_logic;
@@ -33,7 +33,7 @@ architecture arc_Tb_registre16x32 of Tb_registre16x32 is
 
 begin
 
-  UUT: registre16x32 port map(
+  UUT: banc_de_registre port map(
     clk => clk,
     rst => rst,
     w => w,

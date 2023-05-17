@@ -5,16 +5,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 ---------------------------------------------------------
-entity PSR is
+entity UC is
     port (
     CLK : in std_logic;
     WE : in std_logic;
     RST : in std_logic;
     DATAIN : in std_logic_vector(31 downto 0);
     DATAOUT : out std_logic_vector(31 downto 0));
-end PSR;
+end UC;
 ---------------------------------------------------------
-architecture arch of PSR is
+architecture arch of UC is
 signal temp : std_logic_vector(31 downto 0);
 begin
 proc : process(clk,rst)
