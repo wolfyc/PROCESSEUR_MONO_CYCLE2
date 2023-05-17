@@ -1,6 +1,4 @@
--- Projet ARSY ******************* EI2I3-II *************
--- Achraf MOSBAH ***** Yasmine JELASSI ***** Manar BRIRMI
--- **** Registre 32 bits avec commande de chargement*****
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
