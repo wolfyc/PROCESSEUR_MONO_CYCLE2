@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 ---------------------------------------------------------
 entity decodeur is 
 port (
-    instruction,PSR_out : in std_logic_vector(31 downto 0);
+    instruction,PSR_in : in std_logic_vector(31 downto 0);
     ALUCtr : out std_logic_vector(1 downto 0);
     ALUSrc,WrSrc,nPCSel,RegSel,PSREn,MemWr,RegWr : out std_logic;
     offset : out std_logic_vector(23 downto 0);
@@ -73,7 +73,7 @@ architecture arc_decodeur of decodeur is
                             WrSrc <= '0';
                             RegSel <= '0';
                             offset <= instruction(23 downto 0);
-                when BLT => nPCSel <= PSR_out(31);
+                when BLT => nPCSel <= PSR_in(31);
                             RegWr <= '0';
                             ALUSrc <= '0';
                             ALUCtr <= "00";
