@@ -1,0 +1,60 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+ENTITY tb_pc IS
+END tb_pc;
+
+ARCHITECTURE behavior OF tb_pc IS 
+
+    -- Déclaration de l'horloge
+    signal clk : std_logic := '0';
+    constant clk_period : time := 10 ns;
+
+    -- Déclaration du signal de réinitialisation
+    signal rst : std_logic := '0';
+
+    -- Déclaration des signaux d'entrée et de sortie du PC
+    signal PC_i : std_logic_vector(31 downto 0) := (others => '0');
+    signal PC_o : std_logic_vector(31 downto 0);
+
+BEGIN
+
+    -- Instanciation de l'entité PC
+    uut: entity work.pc PORT MAP (
+        clk => clk,
+        rst => rst,
+        PC_i => PC_i,
+        PC_o => PC_o
+    );
+
+    -- Génération du signal d'horloge
+    clk_process :process
+    begin
+        clk <= '0';
+        wait for clk_period/2;
+        clk <= '1';
+        wait for clk_period/2;
+    end process;
+
+    -- Processus de test
+    stim_proc: process
+    begin   
+        -- Réinitialisation du PC
+        rst <= '1';
+        wait for clk_period;
+        rst <= '0'; 
+
+        -- Chargement d'une valeur dans le PC
+        PC_i <= "00000000000000000000000000010000"; -- 16 en binaire
+        wait for clk_period;
+
+        -- Chargement d'une autre valeur dans le PC
+        PC_i <= "00000000000000000000000000100000"; -- 32 en binaire
+        wait for clk_period;
+
+        -- Fin du test
+        wait;
+    end process;
+
+END;
