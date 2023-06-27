@@ -1,0 +1,108 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+use ieee.numeric_std.all;
+
+ENTITY tb_AUT IS
+END tb_AUT;
+
+ARCHITECTURE behavior OF tb_AUT IS 
+
+    -- Component Declaration for the Unit Under Test (UUT)
+    COMPONENT AUT
+    PORT(
+         clk : IN  std_logic;
+         rst : IN  std_logic;
+         w : IN  std_logic_vector(31 downto 0);
+         RA : IN  std_logic_vector(3 downto 0);
+         RB : IN  std_logic_vector(3 downto 0);
+         RW : IN  std_logic_vector(3 downto 0);
+         WE : IN  std_logic;
+         ALUctr : IN  std_logic_vector(1 downto 0);
+         ALUflag : OUT  std_logic;
+         WrEn : IN  std_logic;
+         ALUsrc : IN  std_logic;
+         memToReg : IN  std_logic;
+         imm8 : IN  std_logic_vector(7 downto 0)
+        );
+    END COMPONENT;
+
+   --Inputs
+   signal clk : std_logic := '0';
+   signal rst : std_logic := '0';
+   signal w : std_logic_vector(31 downto 0) := (others => '0');
+   signal RA : std_logic_vector(3 downto 0) := (others => '0');
+   signal RB : std_logic_vector(3 downto 0) := (others => '0');
+   signal RW : std_logic_vector(3 downto 0) := (others => '0');
+   signal WE : std_logic := '0';
+   signal ALUctr : std_logic_vector(1 downto 0) := (others => '0');
+   signal WrEn : std_logic := '0';
+   signal ALUsrc : std_logic := '0';
+   signal memToReg : std_logic := '0';
+   signal imm8 : std_logic_vector(7 downto 0) := (others => '0');
+
+    --Outputs
+   signal ALUflag : std_logic;
+
+   -- Clock period definitions
+   constant clk_period : time := 10 ns;
+
+BEGIN
+
+	-- Instantiate the Unit Under Test (UUT)
+   uut: AUT PORT MAP (
+          clk => clk,
+          rst => rst,
+          w => w,
+          RA => RA,
+          RB => RB,
+          RW => RW,
+          WE => WE,
+          ALUctr => ALUctr,
+          ALUflag => ALUflag,
+          WrEn => WrEn,
+          ALUsrc => ALUsrc,
+          memToReg => memToReg,
+          imm8 => imm8
+        );
+
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+		wait for 100 ns;  
+		
+		rst <= '0'; 
+		wait for clk_period*10;
+
+      -- write data to the registers
+		WE <= '1'; 
+		w <= "00000000000000000000000000110000"; 
+		RW <= "0001"; 
+		wait for clk_period*10;
+
+      -- perform ALU operation
+		WE <= '0'; 
+		ALUctr <= "01"; 
+		RA <= "0001";
+		RB <= "0010"; 
+		RW <= "0011"; 
+		wait for clk_period*10;
+
+      -- read data from the register
+		WE <= '0'; 
+		RA <= "0011"; 
+		wait for clk_period*10;
+
+		wait;
+   end process;
+
+END;
